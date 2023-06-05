@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="src/js/Fontawesome/061ded24e3.js" defer></script>
+    <script src="main.js" defer></script>
     <title>Portfolio Website</title>
 </head>
-<body>
+<body id="body--js">
     <header class="header">
-        <a class="header__button" href="">About me</a>
-        <a class="header__button" href="">Portfolio</a>
-        <a class="header__button" href="">My skills</a>
-        <a class="header__button" href="">Contact</a>
-        <a class="header__button" href="">Hire Me!</a>
+        <section class="header__buttonWrapper">
+            <a class="header__button" href="">About me</a>
+            <a class="header__button" href="">Portfolio</a>
+            <a class="header__button" href="">My skills</a>
+            <a class="header__button" href="">Contact</a>
+            <a class="header__button" href="">Hire Me!</a>
+        </section>
+        <button class="header__menu" id="header__menu--js"><i id="header__menuIcon--js" class="fa-solid fa-bars"></i></button>
     </header>
     <main class="main">
         <section class="banner">
@@ -28,6 +32,40 @@
                 <p class="banner__downScrollText">My Skills</p>
                 <i class="fa-solid fa-arrow-down-long banner__downScrollArrow"></i>
             </figure>
+        </section>
+        <section class="skills">
+            <h2 class="skills__title">My skils</h2>
+            <ul class="skills__skills">
+                <li class="skills__skill">
+                    <img src="src/img/HTML5_logo_and_wordmark.svg.png" alt="The HTML logo" class="skills__skillImg">
+                    <div class="skills__skillTextWrapper">
+                        <h3 class="skills__skillName">HTML</h3>
+                        <p class="skills__skillInfo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint doloribus dignissimos dolores. Tempore ut repellat veritatis rerum dignissimos quasi sed laudantium, temporibus nobis deserunt, fuga eaque quia totam facere accusantium.</p>
+                    </div>
+                </li>
+                <li class="skills__skill">
+                    <img src="src/img/1452px-CSS3_logo_and_wordmark.svg.png" alt="The css logo" class="skills__skillImg">
+                    <div class="skills__skillTextWrapper">
+                        <h3 class="skills__skillName">CSS</h3>
+                        <p class="skills__skillInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores earum quasi, officiis accusamus distinctio, deleniti aliquid, totam eaque expedita blanditiis ipsum quibusdam ea explicabo doloremque facere fuga repellat molestias sequi.</p>
+                    </div>
+                </li>
+                <li class="skills__skill">
+                    <img src="src/img/js-logo.webp" alt="The Javascript logo" class="skills__skillImg">
+                    <div class="skills__skillTextWrapper">
+                        <h3 class="skills__skillName">JS</h3>
+                        <p class="skills__skillInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquam expedita atque consequuntur vero amet! Tempore nobis eligendi autem exercitationem obcaecati est fugiat minus expedita laudantium reiciendis, officia quo! Quam!</p>
+                    </div>
+                </li>
+                <li class="skills__skill">
+                    <img src="src/img/1280px-Sass_Logo_Color.svg.png" alt="the sass logo" class="skills__skillImg">
+                    <div class="skills__skillTextWrapper">
+                        <h3 class="skills__skillName">SASS</h3>
+                        <p class="skills__skillInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos voluptates ex esse, corrupti ut quas, animi beatae minima deleniti veniam harum repudiandae expedita possimus, illo eaque omnis voluptate sit?</p>
+                    </div>
+                </li>
+            </ul>
+            <footer class="footer"></footer>
         </section>
     </main>
 </body>

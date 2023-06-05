@@ -6,3 +6,12 @@
 
 // banner
 @use "./components/banner/banner.scss";
+
+// skills
+@use "./components/skills/skills.scss";
+
+// footer
+@use "./footer/footer.scss";
+
+//mediaqueries
+@use "./abstracts/mediaqueries";

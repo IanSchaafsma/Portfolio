@@ -7,6 +7,13 @@
     padding-right: 4rem;
     gap: 6rem;
 
+    &__buttonWrapper{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 6rem;
+    }
+    
     &__button{
         text-decoration: none;
         color: white;
@@ -17,6 +24,13 @@
             padding: 1rem 2.5rem;
         }
     }
-
+    
+    &__menu{
+        background: none;
+        border: none;
+        color: white;
+        font-size: 4rem;
+        display: none;
+    }
 
 }
