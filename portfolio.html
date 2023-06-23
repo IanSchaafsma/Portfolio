@@ -8,145 +8,170 @@
     <script src="src/js/Fontawesome/061ded24e3.js" defer></script>
     <script src="main.js" defer></script>
     <script src="src/js/observer/observer.js" defer></script>
+    <script src="src/js/modal/modal.js" defer></script>
     <title>Portfolio Website</title>
 </head>
 <body id="test">
-    <header class="header">
+    <header class="header" id="js--header">
         <section class="header__buttonWrapper">
+            <a class="header__button" href="index.html">Home</a>
             <a class="header__button" href="">About me</a>
-            <a class="header__button" href="">Portfolio</a>
-            <a class="header__button" href="">My skills</a>
+            <a class="header__button header__button--active" href="portfolio.html">Portfolio</a>
             <a class="header__button" href="">Contact</a>
             <a class="header__button" href="">Hire Me!</a>
         </section>
         <button class="header__menu" id="header__menu--js"><i id="header__menuIcon--js" class="fa-solid fa-bars"></i></button>
     </header>
     <main class="main main--projects">
-        <section class="banner">
-            <h1 class="banner__title">My Portfolio</h1>
-            <p class="banner__text">Here you will see the projects that I've made and have worked on</p>
-            
-            <figure class="banner__downScroll">
-                <p class="banner__downScrollText">My Projects</p>
-                <i class="fa-solid fa-arrow-down-long banner__downScrollArrow"></i>
-            </figure>
+        <div class="main main--projects main--projectsWrapper" id="js--projectsPage">
+            <section class="banner">
+                <h1 class="banner__title">My Portfolio</h1>
+                <p class="banner__text">Here you will see the projects that I've made and have worked on</p>
+                
+                <figure class="banner__downScroll">
+                    <p class="banner__downScrollText">My Projects</p>
+                    <i class="fa-solid fa-arrow-down-long banner__downScrollArrow"></i>
+                </figure>
+            </section>
+            <h2 class="projectsTitle">My projects</h2>
+            <ul class="projects" >
+                <li class="projects__project">
+                    <div class="projects__projectContent">
+                        <h3 class="projects__projectTitle">Project Title</h3>
+                        <section class="projects__projectCard">
+                        <div class="projectCard__leftWrapper">
+                            <div class="projectCard__infoWrapper">
+                                <ul class="projectCard__skills">
+                                    <li class="projectCard__skill">HTML</li>
+                                    <li class="projectCard__skill">JS</li>
+                                </ul>
+                                <p class="projectCard__info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque alias voluptates nisi quibusdam quaerat necessitatibus quae voluptatum</p>
+                            </div>
+                            <div class="projectCard__buttonWrapper">
+                                <div class="projectCard__buttonWrapperGradient">
+                                    <button class="projectCard__seeMore" id="js--project-1">See more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <figure class="projectCard__figure">
+                            <img src="src/img/textbubble--css-art.png" alt="" class="projectCard__figureImg">
+                        </figure>
+                        </section>
+                    </div>
+                    <div class="projects__projectDate">
+                            <p class="projectCard__Date">21-6-2023</p>
+                    </div>
+                </li>
+                <li class="projects__project projects__project--right">
+                    <div class="projects__projectDate projects__projectDate--right">
+                        <p class="projectCard__Date">21-6-2023</p>
+                    </div>
+                    <div class="projects__projectContent">
+                        <h3 class="projects__projectTitle">Project Title</h3>
+                        <section class="projects__projectCard">
+                        <div class="projectCard__leftWrapper">
+                            <div class="projectCard__infoWrapper">
+                                <ul class="projectCard__skills">
+                                    <li class="projectCard__skill">HTML</li>
+                                    <li class="projectCard__skill">JS</li>
+                                </ul>
+                                <p class="projectCard__info">Info about the project </p>
+                            </div>
+                            <div class="projectCard__buttonWrapper">
+                                <div class="projectCard__buttonWrapperGradient">
+                                    <button class="projectCard__seeMore">See more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <figure class="projectCard__figure">
+                            <img src="src/img/textbubble--css-art.png" alt="" class="projectCard__figureImg">
+                        </figure>
+                        </section>
+                    </div>
+                    
+                </li>
+                <li class="projects__project">
+                    <div class="projects__projectContent">
+                        <h3 class="projects__projectTitle">Project Title</h3>
+                        <section class="projects__projectCard">
+                        <div class="projectCard__leftWrapper">
+                            <div class="projectCard__infoWrapper">
+                                <ul class="projectCard__skills">
+                                    <li class="projectCard__skill">HTML</li>
+                                    <li class="projectCard__skill">JS</li>
+                                </ul>
+                                <p class="projectCard__info">Info about the project </p>
+                            </div>
+                            <div class="projectCard__buttonWrapper">
+                                <div class="projectCard__buttonWrapperGradient">
+                                    <button class="projectCard__seeMore">See more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <figure class="projectCard__figure">
+                            <img src="src/img/textbubble--css-art.png" alt="" class="projectCard__figureImg">
+                        </figure>
+                        </section>
+                    </div>
+                    <div class="projects__projectDate">
+                            <p class="projectCard__Date">21-6-2023</p>
+                    </div>
+                </li>
+                <li class="projects__project projects__project--right">
+                    <div class="projects__projectDate projects__projectDate--right">
+                        <p class="projectCard__Date">21-6-2023</p>
+                    </div>
+                    <div class="projects__projectContent">
+                        <h3 class="projects__projectTitle">Project Title</h3>
+                        <section class="projects__projectCard">
+                        <div class="projectCard__leftWrapper">
+                            <div class="projectCard__infoWrapper">
+                                <ul class="projectCard__skills">
+                                    <li class="projectCard__skill">HTML</li>
+                                    <li class="projectCard__skill">JS</li>
+                                </ul>
+                                <p class="projectCard__info">Info about the project </p>
+                            </div>
+                            <div class="projectCard__buttonWrapper">
+                                <div class="projectCard__buttonWrapperGradient">
+                                    <button class="projectCard__seeMore">See more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <figure class="projectCard__figure">
+                            <img src="src/img/textbubble--css-art.png" alt="" class="projectCard__figureImg">
+                        </figure>
+                        </section>
+                    </div>
+                    
+                </li>
+                
+            </ul>
+        </div>
+        <section class="projectsCard" id="js--projectsCard">
+            <div class="projectsCardItem projectsCard--first">
+                <div class="projectsCard__leftWrapper">
+                    <h2 class="projectsCard__title">Cookie Clicker</h2>
+                    <div class="projectsCard__textWrapper">
+                        <ul class="projectCard__skills">
+                            <li class="projectCard__skill">HTML</li>
+                            <li class="projectCard__skill">CSS</li>
+                            <li class="projectCard__skill">JS</li>
+                        </ul>
+                        <p class="projectsCard__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita architecto, quod molestias porro voluptas voluptatibus ratione ut! Commodi ad dolor minus accusamus, saepe nam. Voluptatibus soluta ad consequatur sunt nisi.</p>    
+                    </div>
+                    <button class="projectsCard__return" id="js--returnButton">Click to Return</button>
+                </div>         
+                <div class="projectsCard__rightWrapper">
+                    <figure class="projectsCard__figure">
+                        <img src="src/img/CookieclickerDemo.png" alt="" class="projectsCard__img">
+                    </figure>
+                </div>       
+                <button class="projectsCard__close" id="js--closeButton">X</button>
+            </div>
         </section>
-        <h2 class="projectsTitle">My projects</h2>
-        <ul class="projects" >
-            <li class="projects__project">
-                <div class="projects__projectContent">
-                    <h3 class="projects__projectTitle">Project Title</h3>
-                    <section class="projects__projectCard">
-                    <div class="projectCard__leftWrapper">
-                        <div class="projectCard__infoWrapper">
-                            <ul class="projectCard__skills">
-                                <li class="projectCard__skill">HTML</li>
-                                <li class="projectCard__skill">JS</li>
-                            </ul>
-                            <p class="projectCard__info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque alias voluptates nisi quibusdam quaerat necessitatibus quae voluptatum</p>
-                        </div>
-                        <div class="projectCard__buttonWrapper">
-                            <div class="projectCard__buttonWrapperGradient">
-                                <button class="projectCard__seeMore">See more</button>
-                            </div>
-                        </div>
-                    </div>
-                    <figure class="projectCard__figure">
-                        <img src="src/img/textbubble--css-art.png" alt="" class="projectCard__figureImg">
-                    </figure>
-                    </section>
-                </div>
-                <div class="projects__projectDate">
-                        <p class="projectCard__Date">21-6-2023</p>
-                </div>
-            </li>
-            <li class="projects__project projects__project--right">
-                <div class="projects__projectDate projects__projectDate--right">
-                    <p class="projectCard__Date">21-6-2023</p>
-                </div>
-                <div class="projects__projectContent">
-                    <h3 class="projects__projectTitle">Project Title</h3>
-                    <section class="projects__projectCard">
-                    <div class="projectCard__leftWrapper">
-                        <div class="projectCard__infoWrapper">
-                            <ul class="projectCard__skills">
-                                <li class="projectCard__skill">HTML</li>
-                                <li class="projectCard__skill">JS</li>
-                            </ul>
-                            <p class="projectCard__info">Info about the project </p>
-                        </div>
-                        <div class="projectCard__buttonWrapper">
-                            <div class="projectCard__buttonWrapperGradient">
-                                <button class="projectCard__seeMore">See more</button>
-                            </div>
-                        </div>
-                    </div>
-                    <figure class="projectCard__figure">
-                        <img src="src/img/textbubble--css-art.png" alt="" class="projectCard__figureImg">
-                    </figure>
-                    </section>
-                </div>
-                
-            </li>
-            <li class="projects__project">
-                <div class="projects__projectContent">
-                    <h3 class="projects__projectTitle">Project Title</h3>
-                    <section class="projects__projectCard">
-                    <div class="projectCard__leftWrapper">
-                        <div class="projectCard__infoWrapper">
-                            <ul class="projectCard__skills">
-                                <li class="projectCard__skill">HTML</li>
-                                <li class="projectCard__skill">JS</li>
-                            </ul>
-                            <p class="projectCard__info">Info about the project </p>
-                        </div>
-                        <div class="projectCard__buttonWrapper">
-                            <div class="projectCard__buttonWrapperGradient">
-                                <button class="projectCard__seeMore">See more</button>
-                            </div>
-                        </div>
-                    </div>
-                    <figure class="projectCard__figure">
-                        <img src="src/img/textbubble--css-art.png" alt="" class="projectCard__figureImg">
-                    </figure>
-                    </section>
-                </div>
-                <div class="projects__projectDate">
-                        <p class="projectCard__Date">21-6-2023</p>
-                </div>
-            </li>
-            <li class="projects__project projects__project--right">
-                <div class="projects__projectDate projects__projectDate--right">
-                    <p class="projectCard__Date">21-6-2023</p>
-                </div>
-                <div class="projects__projectContent">
-                    <h3 class="projects__projectTitle">Project Title</h3>
-                    <section class="projects__projectCard">
-                    <div class="projectCard__leftWrapper">
-                        <div class="projectCard__infoWrapper">
-                            <ul class="projectCard__skills">
-                                <li class="projectCard__skill">HTML</li>
-                                <li class="projectCard__skill">JS</li>
-                            </ul>
-                            <p class="projectCard__info">Info about the project </p>
-                        </div>
-                        <div class="projectCard__buttonWrapper">
-                            <div class="projectCard__buttonWrapperGradient">
-                                <button class="projectCard__seeMore">See more</button>
-                            </div>
-                        </div>
-                    </div>
-                    <figure class="projectCard__figure">
-                        <img src="src/img/textbubble--css-art.png" alt="" class="projectCard__figureImg">
-                    </figure>
-                    </section>
-                </div>
-                
-            </li>
-            
-        </ul>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer" id="js--footer"></footer>
 
 </body>
 </html>
