@@ -10,6 +10,12 @@ const projectPage = document.getElementById("js--projectsCard");
 const exitButton = document.getElementById("js--closeButton");
 const returnButton = document.getElementById("js--returnButton");
 
+
+
+
+
+// clicking on button
+
 project_One.onclick = function(){
     // for(let i = 0; i < projects.length; i++){
     //     projects[i].style.display = "none";
@@ -20,6 +26,8 @@ project_One.onclick = function(){
 
     projectPage.style.display = "flex";
 }, 
+
+// closing buttons
 
 exitButton.onclick = function(){
     projectsPage.style.display = "flex";
