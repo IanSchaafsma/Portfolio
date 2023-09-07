@@ -167,6 +167,16 @@ body {
   line-height: 1.4;
 }
 
+@keyframes popup {
+  from {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .main--projects {
   display: flex;
   justify-content: center;
@@ -321,16 +331,6 @@ body {
   border-radius: 50%;
 }
 
-@keyframes popup {
-  from {
-    opacity: 0;
-    transform: translateY(8rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .projectsCard {
   display: flex;
   justify-content: center;
