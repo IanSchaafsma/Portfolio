@@ -6,10 +6,48 @@ body{
     color: white;
 }
 
+.bodyDark{
+    overflow: hidden;
+}
+
+.darkWrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 1;
+}
+
 .main{
     display: flex;
     flex-direction: column;
     gap: 12rem;
+
+    &__lightButton{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 4rem;
+        border: none;
+        background: white;
+        aspect-ratio: 1/1;
+        z-index: 20;
+        box-shadow: 0 0 10rem 0 white;
+        transition: all 0.2s;
+
+        &:hover{
+            cursor: pointer;
+            transform: translate(-50%, -60%);
+            box-shadow: 0 0 15rem 2rem white;
+        }
+
+        &:active{
+            transition: none;
+        }
+    }
 }
 
 *a:hover{
