@@ -3,17 +3,31 @@ const body = document.getElementById("js--body");
 const darkSpace = document.getElementById("js--dark")
 
 
-lightButton.onclick = () => {
+// let playCount = localStorage.getItem("playcount");
+let playCount = 0;
 
-    if(localStorage.getItem("playcount") == 1){
-        darkSpace.style.visibility = "hidden";
-        lightButton.style.visibility = "hidden";
-        body.style.overflow = "visible";
-        console.log(playcount);
-        playcount = 0;
-        localStorage.setItem("playcount", playcount)
-    }
-    else{
-        playcount = 1;
+darkSpace.style.visibility = "hidden";
+lightButton.style.visibility = "hidden";
+
+Switch = function(){
+    if(playCount == 0){
+        localStorage.setItem("playcount", 1);
     }
 }
+
+playLight = function(){
+    if(localStorage.getItem("playcount") == 1){
+        darkSpace.style.visibility = "visible";
+        lightButton.style.visibility = "visible";
+        localStorage.setItem("playcount", 2);
+    }
+}
+
+lightButton.onclick = () => {
+    darkSpace.style.visibility = "hidden";
+    lightButton.style.visibility = "hidden";
+    body.style.overflow = "visible";
+}
+
+Switch();
+playLight();
