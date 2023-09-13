@@ -509,7 +509,7 @@ body {
   color: red;
 }
 
-.card {
+.contact__card {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -519,11 +519,10 @@ body {
   top: 0;
   background: black;
 }
-.card--2 {
+.contact__card--2 {
   background: rgb(30, 30, 30);
 }
-
-.textWrapper {
+.contact__textWrapper {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -532,14 +531,12 @@ body {
   color: white;
   font-size: 6rem;
 }
-
-.text {
+.contact__text {
   font-size: 6rem;
   color: white;
   text-decoration: none;
 }
-
-.textDescription {
+.contact__textDescription {
   font-size: 2rem;
 }
 
@@ -666,6 +663,12 @@ body {
     height: 40%;
     padding: 0;
   }
+  .contact__text {
+    font-size: 4rem;
+  }
+  .contact__textDescription {
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 37.5rem) {
   .skills {
@@ -708,6 +711,12 @@ body {
     width: 100%;
     justify-content: flex-end;
     margin: 0 0 1rem -1rem;
+  }
+  .contact__text {
+    font-size: 3rem;
+  }
+  .contact__textDescription {
+    font-size: 2rem;
   }
 }
 
