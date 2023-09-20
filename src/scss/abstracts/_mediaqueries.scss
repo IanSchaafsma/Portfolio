@@ -6,6 +6,23 @@
 }
 
 @media screen and (max-width: 93.75rem){ // max width 1500px
+    //about
+
+    .about{
+    
+        &__container{
+            gap: 6rem;
+        }
+    
+        &__imgContainer{
+            width: 35rem;
+        }
+    
+        &__text{
+            padding-top: 0rem;
+        }
+    }
+
     // portfolio
     .projects{
         width: 95%;
@@ -19,12 +36,40 @@
             height: 30rem;
          }
     }
+
 }
 
 @media screen and (max-width: 81.25rem){ // max width 1300px
     // homepage
     .banner{
         padding-left: 10rem;
+    }
+
+    //about
+
+    .about{
+    
+        &__container{
+            gap: 0rem;
+        }
+    
+        &__imgContainer{
+            width: 30rem;
+        }
+    
+        &__text{
+            height: 100%;
+            width: 70rem;
+            transform: scale(90%);
+    
+            &Title{
+                font-size: 200%;
+            }
+    
+            &Description{
+                padding-left: 1rem;
+            }
+        }
     }
 }
 
@@ -46,6 +91,28 @@
             height: 100%;
             flex-direction: column;
             padding: 4rem;
+        }
+    }
+
+    //about
+
+    .about{
+    
+        &__container{
+            gap: 6rem;
+            flex-direction: column-reverse;
+            padding: 10rem;
+        }
+    
+        &__imgContainer{
+            width: 50%;
+            align-self: flex-start;
+            padding-left: 1rem;
+        }
+    
+        &__text{
+            width: 100%;
+            transform: none;
         }
     }
 
@@ -119,6 +186,19 @@
         }
     }
 
+    //about
+
+    .about{
+    
+        &__container{
+            padding: 4rem;
+        }
+    
+        &__imgContainer{
+            width: 70%;
+        }
+    }
+
     // portfolio
 
     .projects{
@@ -183,6 +263,19 @@
     .skills{
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+
+    //about
+
+    .about{
+    
+        &__container{
+            padding: 4rem;
+        }
+    
+        &__imgContainer{
+            width: 100%;
+        }
     }
 
     // portfolio

@@ -1,0 +1,46 @@
+.about{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12rem;
+    }
+
+    &__imgContainer{
+        width: 45rem;
+        aspect-ratio: 1/1.5;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }    
+
+    &__text{
+        align-self: flex-start;
+        height: 100%;
+        width: 75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 5rem;
+        gap: 2rem;
+
+        &Title{
+            align-self: flex-start;
+            font-size: 200%;
+        }
+
+        &Description{
+            padding-left: 1rem;
+        }
+    }
+}

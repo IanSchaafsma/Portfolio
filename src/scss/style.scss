@@ -10,6 +10,9 @@
 // skills
 @use "./components/skills/skills.scss";
 
+// about me
+@use "./components/about/about.scss";
+
 // portfolio
 @use "./components/portfolio/portfolio.scss";
 @use "./components/project/project.scss";
@@ -18,7 +21,7 @@
 @use "./components/contact/contact.scss";
 
 // footer
-@use "./footer/footer.scss";
+@use "./components/footer/footer.scss";
 
 //mediaqueries
 @use "./abstracts/mediaqueries";
