@@ -22,9 +22,9 @@
             border-top-left-radius: 0.2rem;
             border-top-right-radius: 0.2rem;
             color: black;
-            animation-name: popup;
-            animation-duration: 1s;
-            animation-fill-mode: backwards;
+            // animation-name: popup;
+            // animation-duration: 1s;
+            // animation-fill-mode: backwards;
         }
 
         &__first{
@@ -37,10 +37,10 @@
             display: flex;
             flex-direction: column;
             gap: 4rem;
-            animation-name: popup;
-            animation-delay: 1.2s;
-            animation-duration: 1s;
-            animation-fill-mode: backwards;
+            // animation-name: popup;
+            // animation-delay: 1.2s;
+            // animation-duration: 1s;
+            // animation-fill-mode: backwards;
         }
 
         &__textWrapper{
@@ -93,11 +93,11 @@
             align-items: center;
             border: 0.2rem solid black;
             border-radius: 0.2rem;
-            transition: all 0.3s;
-            animation-name: popup;
-            animation-delay: 0.2s;
-            animation-duration: 1s;
-            animation-fill-mode: backwards;
+            // transition: all 0.3s;
+            // animation-name: popup;
+            // animation-delay: 0.2s;
+            // animation-duration: 1s;
+            // animation-fill-mode: backwards;
 
             &:nth-of-type(1){
                 animation-delay: 1.4s;
