@@ -12,6 +12,16 @@
         justify-content: flex-end;
         align-items: center;
         gap: 6rem;
+
+        &--mobile{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            background: black;
+            color: white;
+        }
     }
     
     &__button{
@@ -45,6 +55,31 @@
         color: white;
         font-size: 4rem;
         display: none;
+        z-index: 2;
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 
+
+    // mobile buttons
+
+    &__mobileWrapper{
+        display: none;
+    }
+
+    &__mobileButton{
+    }
+
+}
+
+.header__buttonWrapper--mobile{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    gap: 4rem;
+    background: linear-gradient(120deg, rgb(248, 114, 114), rgb(248, 141, 114));
 }

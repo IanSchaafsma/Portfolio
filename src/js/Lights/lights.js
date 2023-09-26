@@ -1,5 +1,5 @@
 const lightButton = document.getElementById("js--lightButton");
-const body = document.getElementById("js--body");
+const body = document.getElementById("body--js");
 const darkSpace = document.getElementById("js--dark")
 
 

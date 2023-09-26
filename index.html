@@ -7,29 +7,37 @@
     <link rel="stylesheet" href="style.css">
     <script src="src/js/Fontawesome/061ded24e3.js" defer></script>
     <script src="main.js" defer></script>
-    <script src="src/js/Lights/lights.js" defer></script>
+    <!-- <script src="src/js/Lights/lights.js" defer></script> -->
+    <script src="src/js/Nav-menu/nav.js" defer></script>
     <title>Portfolio Website</title>
 </head>
-<body class="bodyDark" id="js--body">
-    <div id="js--dark" class="darkWrapper"></div>
-    <header class="header">
+<body class="bodyDark" id="body--js">
+    <!-- <div id="js--dark" class="darkWrapper"></div> -->
+    <header class="header" id="js--header">
         <section class="header__buttonWrapper">
             <a class="header__button header__button--active" href="index.html">Home</a>
             <a class="header__button" href="about.html">About me</a>
             <a class="header__button" href="portfolio.html">Portfolio</a>
             <a class="header__button" href="contact.html">Contact</a>
-            <a class="header__button" href="">Hire Me!</a>
+            <a class="header__button" href="contact.html">Hire Me!</a>
+        </section>
+        <section class="header__mobileWrapper header__buttonWrapper--mobile" id="js--mobileMenu">
+            <a class="header__button header__mobileButton header__button--active" href="index.html">Home</a>
+            <a class="header__button header__mobileButton" href="about.html">About me</a>
+            <a class="header__button header__mobileButton" href="portfolio.html">Portfolio</a>
+            <a class="header__button header__mobileButton" href="contact.html">Contact</a>
+            <a class="header__button header__mobileButton" href="contact.html">Hire Me!</a>
         </section>
         <button class="header__menu" id="header__menu--js"><i id="header__menuIcon--js" class="fa-solid fa-bars"></i></button>
     </header>
     <main class="main">
-        <button class="main__lightButton" id="js--lightButton"></button>
+        <!-- <button class="main__lightButton" id="js--lightButton"></button> -->
         <section class="banner">
             <h1 class="banner__title">Hi I'm Ian Schaafsma</h1>
             <p class="banner__text">A Web Developer located in the Netherlands</p>
             <div class="banner__buttonWrapper">
-                <a href="" class="banner__button banner__button--left">Contact</a>
-                <a href="" class="banner__button banner__button--right">My work</a>
+                <a href="contact.html" class="banner__button banner__button--left">Contact</a>
+                <a href="portfolio.html" class="banner__button banner__button--right">My work</a>
             </div>
             <figure class="banner__downScroll">
                 <p class="banner__downScrollText">My Skills</p>
