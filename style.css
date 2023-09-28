@@ -434,14 +434,13 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding-left: 6rem;
   padding-right: 6rem;
   padding-top: 6rem;
   display: none;
 }
 .projectsCardItem {
-  background: green;
   height: 100%;
   width: 100%;
   display: flex;
@@ -449,19 +448,18 @@ body {
   border-top-left-radius: 0.2rem;
   border-top-right-radius: 0.2rem;
   color: black;
+  background: white;
   padding: 4rem;
 }
 .projectsCard__leftWrapper {
   width: 55%;
   height: 100%;
-  background: gray;
   display: flex;
   flex-direction: column;
   gap: 6rem;
 }
 .projectsCard__textWrapper {
   width: 80%;
-  background: blue;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -470,18 +468,15 @@ body {
 .projectsCard__title {
   font-size: 400%;
   font-weight: 200;
-  background: purple;
 }
 .projectsCard__description {
   line-height: 1.6;
-  background: peru;
 }
 .projectsCard__return {
   background: none;
   font-size: 2rem;
   border: none;
   transition: all 0.2s;
-  background: greenyellow;
   align-self: flex-start;
   padding-left: 1.5rem;
 }
@@ -492,7 +487,6 @@ body {
 .projectsCard__links {
   width: 80%;
   height: 8rem;
-  background: deeppink;
   padding-left: 1.5rem;
   display: flex;
   justify-content: flex-start;
@@ -706,6 +700,25 @@ body {
   .projectCard__Date::after {
     left: 0%;
   }
+  .projectsCardItem {
+    flex-direction: column;
+  }
+  .projectsCard__leftWrapper {
+    width: 100%;
+    gap: 6rem;
+    padding-bottom: 6rem;
+  }
+  .projectsCard__textWrapper {
+    width: 100%;
+  }
+  .projectsCard__rightWrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .projectsCard__figure {
+    width: 100%;
+    height: 100%;
+  }
 }
 @media screen and (max-width: 50rem) {
   .banner {
@@ -818,6 +831,29 @@ body {
     width: 100%;
     justify-content: flex-end;
     margin: 0 0 1rem -1rem;
+  }
+  .projectsCard {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem;
+  }
+  .projectsCard__leftWrapper {
+    gap: 2rem;
+  }
+  .projectsCard__title {
+    font-size: 200%;
+  }
+  .projectsCard__textWrapper {
+    padding-left: 0;
+  }
+  .projectsCard__return {
+    padding-left: 0;
+  }
+  .projectsCard__links {
+    padding-left: 0rem;
+  }
+  .projectsCard__close {
+    width: 7rem;
   }
   .contact__text {
     font-size: 3rem;
