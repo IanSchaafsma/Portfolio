@@ -1,4 +1,8 @@
 const project_One = document.getElementById("js--project-1");
+const project_Two = document.getElementById("js--project-2");
+const project_Three = document.getElementById("js--project-3");
+
+
 const projects = document.getElementsByName("projectCard__seeMore");
 
 const header = document.getElementById("js--header");
@@ -7,14 +11,16 @@ const footer = document.getElementById("js--footer");
 
 const projectPage = document.getElementById("js--projectsCard");
 
-const exitButton = document.getElementById("js--closeButton");
-const returnButton = document.getElementById("js--returnButton");
+const exitButton = document.querySelectorAll(".projectsCard__close");
+const returnButton = document.querySelectorAll(".projectsCard__return");
+
+const projectCard1 = document.getElementById("projectsCard--first");
+const projectCard2 = document.getElementById("projectsCard--second");
+const projectCard3 = document.getElementById("projectsCard--third");
 
 
 
-
-
-// clicking on button
+// clicking on button opens modal
 
 project_One.onclick = function(){
     // for(let i = 0; i < projects.length; i++){
@@ -25,11 +31,51 @@ project_One.onclick = function(){
     footer.style.display = "none";
 
     projectPage.style.display = "flex";
-}, 
+
+    projectCard1.style.display = "flex"
+    projectCard2.style.display = "none"
+    projectCard3.style.display = "none"
+};
+
+project_Two.onclick = function(){
+    projectsPage.style.display = "none";
+    header.style.display = "none";
+    footer.style.display = "none";
+
+    projectPage.style.display = "flex";
+
+    projectCard1.style.display = "none";
+    projectCard2.style.display = "flex";
+    projectCard3.style.display = "none";
+
+};
+
+project_Three.onclick = function(){
+    projectsPage.style.display = "none";
+    header.style.display = "none";
+    footer.style.display = "none";
+
+    projectPage.style.display = "flex";
+    
+    projectCard1.style.display = "none";
+    projectCard2.style.display = "none";
+    projectCard3.style.display = "flex";
+
+};
+
+
+
+
+
+
+
+
+
+
 
 // closing buttons
 
-exitButton.onclick = function(){
+exitButton[0].onclick = function(){
     projectsPage.style.display = "flex";
     header.style.display = "flex";
     footer.style.display = "flex";
@@ -37,7 +83,39 @@ exitButton.onclick = function(){
     projectPage.style.display = "none";
 };
 
-returnButton.onclick = function(){
+exitButton[1].onclick = function(){
+    projectsPage.style.display = "flex";
+    header.style.display = "flex";
+    footer.style.display = "flex";
+
+    projectPage.style.display = "none";
+};
+
+exitButton[2].onclick = function(){
+    projectsPage.style.display = "flex";
+    header.style.display = "flex";
+    footer.style.display = "flex";
+
+    projectPage.style.display = "none";
+};
+
+returnButton[0].onclick = function(){
+    projectsPage.style.display = "flex";
+    header.style.display = "flex";
+    footer.style.display = "flex";
+
+    projectPage.style.display = "none";
+};
+
+returnButton[1].onclick = function(){
+    projectsPage.style.display = "flex";
+    header.style.display = "flex";
+    footer.style.display = "flex";
+
+    projectPage.style.display = "none";
+};
+
+returnButton[2].onclick = function(){
     projectsPage.style.display = "flex";
     header.style.display = "flex";
     footer.style.display = "flex";

@@ -2,7 +2,10 @@
     // portfolio
     .projects{
         width: 80%;
+
     }
+
+    
 }
 
 @media screen and (max-width: 93.75rem){ // max width 1500px
@@ -70,6 +73,14 @@
                 padding-left: 1rem;
             }
         }
+    }
+
+    // portfolio
+    .projects{
+        &Card{
+            height: 100%;
+        }
+
     }
 }
 
