@@ -2,10 +2,16 @@
     width: 100%;
     height: 8rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding-right: 4rem;
     gap: 6rem;
+
+    &__language{
+        margin-left: 4rem;
+        color: white;
+        text-decoration: none;
+    }
 
     &__buttonWrapper{
         display: flex;
