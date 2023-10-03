@@ -17,6 +17,7 @@ const returnButton = document.querySelectorAll(".projectsCard__return");
 const projectCard1 = document.getElementById("projectsCard--first");
 const projectCard2 = document.getElementById("projectsCard--second");
 const projectCard3 = document.getElementById("projectsCard--third");
+const projectCard4 = document.getElementById("projectsCard--fourth");
 
 
 
@@ -32,9 +33,10 @@ project_One.onclick = function(){
 
     projectPage.style.display = "flex";
 
-    projectCard1.style.display = "flex"
-    projectCard2.style.display = "none"
-    projectCard3.style.display = "none"
+    projectCard1.style.display = "flex";
+    projectCard2.style.display = "none";
+    projectCard3.style.display = "none";
+    projectCard4.style.display = "none";
 };
 
 project_Two.onclick = function(){
@@ -47,6 +49,7 @@ project_Two.onclick = function(){
     projectCard1.style.display = "none";
     projectCard2.style.display = "flex";
     projectCard3.style.display = "none";
+    projectCard4.style.display = "none";
 
 };
 
@@ -60,6 +63,7 @@ project_Three.onclick = function(){
     projectCard1.style.display = "none";
     projectCard2.style.display = "none";
     projectCard3.style.display = "flex";
+    projectCard4.style.display = "none";
 
 };
 
