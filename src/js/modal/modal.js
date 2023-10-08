@@ -9,6 +9,8 @@ const projectCards = [
   document.getElementById("projectsCard--second"),
   document.getElementById("projectsCard--third"),
   document.getElementById("projectsCard--fourth"),
+  document.getElementById("projectsCard--fifth"),
+  document.getElementById("projectsCard--sixth"),
 ];
 
 function showProject(projectIndex) {
@@ -26,6 +28,8 @@ document.getElementById("js--project-1").addEventListener("click", () => showPro
 document.getElementById("js--project-2").addEventListener("click", () => showProject(1));
 document.getElementById("js--project-3").addEventListener("click", () => showProject(2));
 document.getElementById("js--project-4").addEventListener("click", () => showProject(3));
+document.getElementById("js--project-5").addEventListener("click", () => showProject(4));
+document.getElementById("js--project-6").addEventListener("click", () => showProject(5));
 
 
 // closing buttons
@@ -65,6 +69,21 @@ exitButton[3].onclick = function(){
     projectPage.style.display = "none";
 };
 
+exitButton[4].onclick = function(){
+    projectsPage.style.display = "flex";
+    header.style.display = "flex";
+    footer.style.display = "flex";
+
+    projectPage.style.display = "none";
+};
+
+exitButton[5].onclick = function(){
+    projectsPage.style.display = "flex";
+    header.style.display = "flex";
+    footer.style.display = "flex";
+
+    projectPage.style.display = "none";
+};
 
 returnButton[0].onclick = function(){
     projectsPage.style.display = "flex";
@@ -98,3 +117,18 @@ returnButton[3].onclick = function(){
     projectPage.style.display = "none";
 };
 
+returnButton[4].onclick = function(){
+    projectsPage.style.display = "flex";
+    header.style.display = "flex";
+    footer.style.display = "flex";
+
+    projectPage.style.display = "none";
+};
+
+returnButton[5].onclick = function(){
+    projectsPage.style.display = "flex";
+    header.style.display = "flex";
+    footer.style.display = "flex";
+
+    projectPage.style.display = "none";
+};

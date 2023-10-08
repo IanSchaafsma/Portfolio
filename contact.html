@@ -6,47 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <script src="../src/js/Fontawesome/061ded24e3.js" defer></script>
-    <script src="../main.js" defer></script>
     <script src="../src/js/Nav-menu/nav.js" defer></script>
     <title>Portfolio Website</title>
 </head>
 <body id="body--js">
     <header class="header" id="js--header">
-        <a href="../eng/about.html" class="header__language">Engels</a>
+        <a href="../eng/contact.html" class="header__language">Engels</a>
         <section class="header__buttonWrapper">
             <a class="header__button" href="index.html">Home</a>
-            <a class="header__button header__button--active" href="about.html">Wie ben ik</a>
+            <a class="header__button" href="about.html">Wie ben ik</a>
             <a class="header__button" href="portfolio.html">Portfolio</a>
-            <a class="header__button" href="contact.html">Contact</a>
+            <a class="header__button header__button--active" href="contact.html">Contact</a>
             <a class="header__button" href="https://github.com/IanSchaafsma">Mijn Github!</a>
         </section>
         <section class="header__mobileWrapper header__buttonWrapper--mobile" id="js--mobileMenu">
             <a class="header__button header__mobileButton" href="index.html">Home</a>
-            <a class="header__button header__mobileButton header__button--active" href="about.html">Wie ben ik</a>
+            <a class="header__button header__mobileButton" href="about.html">Wie ben ik</a>
             <a class="header__button header__mobileButton" href="portfolio.html">Portfolio</a>
-            <a class="header__button header__mobileButton" href="contact.html">Contact</a>
+            <a class="header__button header__mobileButton header__button--active" href="contact.html">Contact</a>
             <a class="header__button header__mobileButton" href="https://github.com/IanSchaafsma">Mijn Github!</a>
         </section>
         <button class="header__menu" id="header__menu--js"><i id="header__menuIcon--js" class="fa-solid fa-bars"></i></button>
     </header>
     <main class="main">
         <section class="banner">
-            <h1 class="banner__title">Over mij</h1>
-            <p class="banner__text">Hier kan je wat meer lezen over wie ik ben en wat ik doe</p>
+            <h1 class="banner__title">Contacteer mij</h1>
+            <p class="banner__text">Hier kan je manieren vinden om contact met mij op te nemen</p>
             <figure class="banner__downScroll">
-                <p class="banner__downScrollText">About me</p>
+                <p class="banner__downScrollText">Contact info</p>
                 <i class="fa-solid fa-arrow-down-long banner__downScrollArrow"></i>
             </figure>
         </section>
-        <section class="about">
-            <div class="about__container">
-                <figure class="about__imgContainer">
-                    <img class="about__img" src="../src/img/b6e9e41a-5acc-4412-b4f6-4ef54198dd42.webp" alt="this is a picture of me">
-                </figure>
-                <span class="about__text">
-                    <h3 class="about__textTitle">Hoi ik ben ian</h3>
-                    <p class="about__textDescription">Ik ben een student op het Media College Amsterdam, waar ik op het moment studeer voor web-development. Dingen die ik leuk vind zijn muziek, auto's, games en toffe websites coderen. Mijn doel is om uiteindelijk de skills te hebben om een website te maken dat voor mensen een belefings ervaring geeft. Door middel van b.v. animaties en transities.</p>
-                </span>
+        <section class="contact">
+            <div class="contactWrapper">
+                <section class="contact__card">
+                    <div class="contact__textWrapper">
+                        <p class="contact__text contact__textDescription">Email:</p>
+                        <p class="contact__text">Ianschaafsma@gmail.com</p>
+                    </div>
+                </section>
+                <section class="contact__card contact__card--2">
+                    <div class="contact__textWrapper">
+                        <p class="contact__text contact__textDescription">Klik hier</p>
+                        <a class="contact__text" href="https://www.linkedin.com/in/ian-schaafsma-2330a9270/">Mijn Linkedin page</a>
+                    </div>
+                </section>
             </div>
         </section>
     </main>
