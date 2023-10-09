@@ -305,6 +305,16 @@
 }
 
 @media screen and (max-width: 37.5rem){ // max width 600px
+    // banner
+    .banner{
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        &__title{
+            font-size: 200%;
+        }
+    }
+
     // homepage
     .skills{
         padding-left: 2rem;
