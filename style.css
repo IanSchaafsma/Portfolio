@@ -874,5 +874,15 @@ body {
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 28.125rem) {
+  .projectsCard {
+    padding: 0;
+  }
+  .projectsCard__close {
+    border: none;
+    transform: translate(0%, 0%);
+    background: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

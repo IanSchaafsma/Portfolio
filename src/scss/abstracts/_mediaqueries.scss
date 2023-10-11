@@ -435,3 +435,19 @@
     }
     
 }
+
+@media screen and (max-width: 28.125rem){ // max width: 450px
+     // project modal
+     .projects{  
+
+        &Card{  
+            padding: 0;     
+
+            &__close{
+                border: none;
+                transform: translate(0%, 0%);
+                background: none;
+            }
+        }
+    }
+}
