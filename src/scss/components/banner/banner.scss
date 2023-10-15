@@ -7,6 +7,9 @@
     height: 80vh;
     gap: 1rem;
     position: relative;
+    animation-name: popup;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
 
     &__title{
         font-size: 300%;
@@ -21,13 +24,18 @@
         padding: 1rem 2.5rem;
         color: white;
         text-decoration: none;
+        animation-name: popup;
+        animation-duration: 1s;
+        animation-fill-mode: backwards;
 
         &--left{
             border-top-left-radius: 1.5rem;
+            animation-delay: 0.2s;
         }
 
         &--right{
             border-bottom-right-radius: 1.5rem;
+            animation-delay: 0.4s;
         }
     }
 
@@ -49,11 +57,18 @@
         transform: translateX(-50%);
 
         &Text{
-            
+            animation-name: popup;
+            animation-duration: 1s;
+            animation-delay: 0.4s;
+            animation-fill-mode: backwards;  
         }
 
         &Arrow{
             font-size: 5rem;
+            animation-name: popup;
+            animation-duration: 1s;
+            animation-delay: 0.6s;
+            animation-fill-mode: backwards;
         }
     }
 }

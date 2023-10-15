@@ -150,6 +150,9 @@ body {
   height: 80vh;
   gap: 1rem;
   position: relative;
+  animation-name: popup;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
 }
 .banner__title {
   font-size: 300%;
@@ -159,12 +162,17 @@ body {
   padding: 1rem 2.5rem;
   color: white;
   text-decoration: none;
+  animation-name: popup;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
 }
 .banner__button--left {
   border-top-left-radius: 1.5rem;
+  animation-delay: 0.2s;
 }
 .banner__button--right {
   border-bottom-right-radius: 1.5rem;
+  animation-delay: 0.4s;
 }
 .banner__buttonWrapper {
   margin-top: 2rem;
@@ -182,8 +190,18 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+.banner__downScrollText {
+  animation-name: popup;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+  animation-fill-mode: backwards;
+}
 .banner__downScrollArrow {
   font-size: 5rem;
+  animation-name: popup;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+  animation-fill-mode: backwards;
 }
 
 .skills {
@@ -216,6 +234,11 @@ body {
   background: rgba(255, 255, 255, 0.05);
   border: 0.2rem solid rgba(0, 0, 0, 0.05);
   box-shadow: 2rem 0rem 2rem 2rem rgba(0, 0, 0, 0.08);
+}
+.skills__skill:hover {
+  transform: translateY(-0.5rem);
+  transition: all 0.4s;
+  box-shadow: 1rem 2rem 2rem 1rem rgba(0, 0, 0, 0.08);
 }
 .skills__skillTextWrapper {
   display: flex;
@@ -520,20 +543,20 @@ body {
   align-items: center;
   border: 0.2rem solid black;
   border-radius: 0.2rem;
+  animation-name: popup;
+  animation-delay: 0.2s;
+  animation-duration: 0.6s;
+  animation-fill-mode: backwards;
 }
 .projectsCard__link:nth-of-type(1) {
-  animation-delay: 1.4s;
+  animation-delay: 0.2s;
 }
 .projectsCard__link:nth-of-type(2) {
-  animation-delay: 1.6s;
-}
-.projectsCard__link:nth-of-type(3) {
-  animation-delay: 1.8s;
+  animation-delay: 0.4s;
 }
 .projectsCard__linkItem {
   font-size: 5rem;
   color: black;
-  transition: all 0.3s;
 }
 .projectsCard__link:hover {
   background: black;
