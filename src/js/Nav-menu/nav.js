@@ -3,7 +3,6 @@ const menuButton = document.getElementById("header__menu--js");
 const menuWrapper = document.getElementById("js--mobileMenu");
 let menuIcon = document.getElementById("header__menuIcon--js");
 
-
 menuClicked = 0;
 
 menuButton.onclick = function(){
@@ -18,5 +17,6 @@ menuButton.onclick = function(){
         menuIcon.classList = "fa-solid fa-bars";
         menuClicked = 0;
         body.style.overflow = "visible";
+
     }
 }

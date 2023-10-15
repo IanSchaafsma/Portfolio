@@ -437,6 +437,14 @@
 }
 
 @media screen and (max-width: 28.125rem){ // max width: 450px
+
+    .main--projects{
+        padding-top: 0;
+    }
+
+    .banner--portfolio{
+        margin-top: 8rem;
+    }
      // project modal
      .projects{  
 

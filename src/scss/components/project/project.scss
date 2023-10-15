@@ -56,9 +56,19 @@
             font-size: 400%;
             font-weight: 200;
         }
+
+        &__info{
+            color: gray;
+        }
     
         &__description{
             line-height: 1.6;
+
+            &--link{
+                text-decoration: none;
+                color: green;
+                white-space: pre;
+            }
         }
 
         &__return{

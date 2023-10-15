@@ -34,6 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12rem;
+  padding-top: 8rem;
 }
 .main__lightButton {
   position: absolute;
@@ -69,6 +70,10 @@ body {
   align-items: center;
   padding-right: 4rem;
   gap: 6rem;
+  position: fixed;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(120deg, rgb(248, 114, 114), rgb(248, 131, 114));
+  z-index: 2;
 }
 .header__language {
   margin-left: 4rem;
@@ -129,7 +134,7 @@ body {
 .header__buttonWrapper--mobile {
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   gap: 4rem;
@@ -284,6 +289,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 4rem;
 }
 
 .projects {
@@ -474,8 +480,16 @@ body {
   font-size: 400%;
   font-weight: 200;
 }
+.projectsCard__info {
+  color: gray;
+}
 .projectsCard__description {
   line-height: 1.6;
+}
+.projectsCard__description--link {
+  text-decoration: none;
+  color: green;
+  white-space: pre;
 }
 .projectsCard__return {
   background: none;
@@ -875,6 +889,12 @@ body {
   }
 }
 @media screen and (max-width: 28.125rem) {
+  .main--projects {
+    padding-top: 0;
+  }
+  .banner--portfolio {
+    margin-top: 8rem;
+  }
   .projectsCard {
     padding: 0;
   }

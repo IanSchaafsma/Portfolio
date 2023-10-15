@@ -6,6 +6,10 @@
     align-items: center;
     padding-right: 4rem;
     gap: 6rem;
+    position: fixed;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    background: linear-gradient(120deg, rgb(248, 114, 114), rgb(248, 131, 114));
+    z-index: 2;
 
     &__language{
         margin-left: 4rem;
@@ -83,7 +87,7 @@
 .header__buttonWrapper--mobile{
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     gap: 4rem;

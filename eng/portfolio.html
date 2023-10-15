@@ -13,26 +13,26 @@
 </head>
 <body id="body--js">
     <header class="header" id="js--header">
-        <a href="../portfolio.html" class="header__language">Dutch</a>
+        <a href="../portfolio.html" class="header__language">Dutch <i class="fa-solid fa-earth-americas"></i></a>
         <section class="header__buttonWrapper">
             <a class="header__button" href="index.html">Home</a>
             <a class="header__button" href="about.html">About me</a>
             <a class="header__button header__button--active" href="portfolio.html">Portfolio</a>
             <a class="header__button" href="contact.html">Contact</a>
-            <a class="header__button" href="https://github.com/IanSchaafsma">My Github!</a>
+            <a class="header__button" target="_blank" href="https://github.com/IanSchaafsma">My Github!</a>
         </section>
         <section class="header__mobileWrapper header__buttonWrapper--mobile" id="js--mobileMenu">
             <a class="header__button header__mobileButton" href="index.html">Home</a>
             <a class="header__button header__mobileButton" href="about.html">About me</a>
             <a class="header__button header__mobileButton header__button--active" href="portfolio.html">Portfolio</a>
             <a class="header__button header__mobileButton" href="contact.html">Contact</a>
-            <a class="header__button header__mobileButton" href="https://github.com/IanSchaafsma">My Github!</a>
+            <a class="header__button header__mobileButton" target="_blank" href="https://github.com/IanSchaafsma">My Github!</a>
         </section>
         <button class="header__menu" id="header__menu--js"><i id="header__menuIcon--js" class="fa-solid fa-bars"></i></button>
     </header>
     <main class="main main--projects">
         <div class="main main--projects main--projectsWrapper" id="js--projectsPage">
-            <section class="banner">
+            <section class="banner banner--portfolio">
                 <h1 class="banner__title">My Portfolio</h1>
                 <p class="banner__text">Here you will see the projects that I've made and have worked on</p>
                 
@@ -47,6 +47,7 @@
 
 
             <ul class="projects" >
+
                 <li class="projects__project">
                     <div class="projects__projectContent">
                         <h3 class="projects__projectTitle">Museum Online</h3>
@@ -75,7 +76,6 @@
                             <p class="projectCard__Date">29-11-2021</p>
                     </div>
                 </li>
-
 
                 <li class="projects__project projects__project--right">
                     <div class="projects__projectDate projects__projectDate--right">
@@ -108,7 +108,7 @@
                 
                 <li class="projects__project">
                     <div class="projects__projectContent">
-                        <h3 class="projects__projectTitle">Maneattraction Site</h3>
+                        <h3 class="projects__projectTitle">Fontshowcase App</h3>
                         <section class="projects__projectCard">
                         <div class="projectCard__leftWrapper">
                             <div class="projectCard__infoWrapper">
@@ -117,7 +117,7 @@
                                     <li class="projectCard__skill">SCSS</li>
                                     <li class="projectCard__skill">JS</li>
                                 </ul>
-                                <p class="projectCard__info">My latest project a website I made for a music group</p>
+                                <p class="projectCard__info">An app made inspired by google fonts</p>
                             </div>
                             <div class="projectCard__buttonWrapper">
                                 <div class="projectCard__buttonWrapperGradient">
@@ -126,15 +126,15 @@
                             </div>
                         </div>
                         <figure class="projectCard__figure">
-                            <img src="../src/img/project3.webp" alt="" class="projectCard__figureImg">
+                            <img src="../src/img/project6.webp" alt="" class="projectCard__figureImg">
                         </figure>
                         </section>
                     </div>
                     <div class="projects__projectDate">
-                            <p class="projectCard__Date">31-5-2023</p>
+                        <p class="projectCard__Date">12-10-2022</p>
                     </div>
+                        
                 </li>
-
 
                 <li class="projects__project projects__project--right">
                     <div class="projects__projectDate projects__projectDate--right">
@@ -198,10 +198,10 @@
 
                 <li class="projects__project projects__project--right">
                     <div class="projects__projectDate projects__projectDate--right">
-                        <p class="projectCard__Date">12-10-2022</p>
+                        <p class="projectCard__Date">31-5-2023</p>
                     </div>
                     <div class="projects__projectContent">
-                        <h3 class="projects__projectTitle">Fontshowcase App</h3>
+                        <h3 class="projects__projectTitle">Maneattraction Site</h3>
                         <section class="projects__projectCard">
                         <div class="projectCard__leftWrapper">
                             <div class="projectCard__infoWrapper">
@@ -210,7 +210,7 @@
                                     <li class="projectCard__skill">SCSS</li>
                                     <li class="projectCard__skill">JS</li>
                                 </ul>
-                                <p class="projectCard__info">An app made inspired by google fonts</p>
+                                <p class="projectCard__info">My latest project a website I made for a music group</p>
                             </div>
                             <div class="projectCard__buttonWrapper">
                                 <div class="projectCard__buttonWrapperGradient">
@@ -219,12 +219,12 @@
                             </div>
                         </div>
                         <figure class="projectCard__figure">
-                            <img src="../src/img/project6.webp" alt="" class="projectCard__figureImg">
+                            <img src="../src/img/project3.webp" alt="" class="projectCard__figureImg">
                         </figure>
                         </section>
                     </div>
-                        
                 </li>
+
             </ul>
         </div>
 
@@ -243,7 +243,8 @@
                             <li class="projectCard__skill">CSS</li>
                             <li class="projectCard__skill">JS</li>
                         </ul>
-                        <p class="projectsCard__description">This was my very first coding experience. School gave us the assignment to make a website for a museum of choice. This was gonna be made with two people I made it togheter with Dani van der Mijl. When making it we had almost no coding experience. <a target="_blank" href="https://ianschaafsma.github.io/BO-Museum_Online/web/">You can try it for yourself here!</a></p>    
+                        <p class="projectsCard__info">1st year, in a team of 2, time spent 4 weeks</p>
+                        <p class="projectsCard__description">This was my very first coding experience. School gave us the assignment to make a website for a museum of choice. This was gonna be made with two people I made it togheter with <a class="projectsCard__description--link" target="_blank" href="http://danivandermijl.nl">Dani van der Mijl</a>. When making it we had almost no coding experience. <a target="_blank" href="https://ianschaafsma.github.io/BO-Museum_Online/web/">You can try it for yourself here!</a></p>    
                     </div>
                     <button class="projectsCard__return">Click to Return</button>
                     <ul class="projectsCard__links">
@@ -271,12 +272,13 @@
                             <li class="projectCard__skill">HTML</li>
                             <li class="projectCard__skill">CSS</li>
                         </ul>
+                        <p class="projectsCard__info">1st year, solo project, time spent per project 1/2 days</p>
                         <p class="projectsCard__description">After I got a bit more experienced with css I wanted to see what more it can do. So I tried making some css-art. This is when I found out that I really enjoyed css. <a target="_blank" href="https://github.com/IanSchaafsma/CSS-ART">Check here for more of my css-art</a></p>    
                     </div>
                     <button class="projectsCard__return">Click to Return</button>
                     <ul class="projectsCard__links">
                         <li class="projectsCard__link">
-                            <a target="_blank" href="https://github.com/IanSchaafsma/BO-Museum_Online" class="projectsCard__linkItem"><i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" href="https://github.com/IanSchaafsma/CSS-ART" class="projectsCard__linkItem"><i class="fa-brands fa-github"></i></a>
                         </li>
                         <li class="projectsCard__link">
                             <a target="_blank" href="https://www.linkedin.com/in/ian-schaafsma-2330a9270/" class="projectsCard__linkItem"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -293,19 +295,20 @@
 
             <div class="projectsCardItem" id="projectsCard--third">
                 <div class="projectsCard__leftWrapper">
-                    <h2 class="projectsCard__title">Maneattraction Site</h2>
+                    <h2 class="projectsCard__title">Fontshowcase App</h2>
                     <div class="projectsCard__textWrapper">
                         <ul class="projectCard__skills">
                             <li class="projectCard__skill">HTML</li>
                             <li class="projectCard__skill">SCSS</li>
                             <li class="projectCard__skill">JS</li>
                         </ul>
-                        <p class="projectsCard__description">My first up and running on a server website I made for my dad's music group. While making this I experienced how easy it is to reuse CSS. Works on mobile aswell <a target="_blank" href="http://maneattraction.nl/">Check the site!</a></a></p>    
+                        <p class="projectsCard__info">2nd year, solo project, time spent 1 week</p>
+                        <p class="projectsCard__description">Fontshowcase is an app that I made inspired by google fonts. In this app you can see what fonts look like by typing in the input field. You can also favorite the fonts you like most. And for the users that want to rest their eyes a bit more there also is a darkmode. <a target="_blank" href="http://33319.hosts1.ma-cloud.nl/fontshowcase/">Try it yourself!</a></p>    
                     </div>
                     <button class="projectsCard__return">Click to Return</button>
                     <ul class="projectsCard__links">
                         <li class="projectsCard__link">
-                            <a target="_blank" href="https://github.com/IanSchaafsma/ManeAttraction-Website" class="projectsCard__linkItem"><i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" href="https://github.com/IanSchaafsma/Fro-Year-2/tree/main/fontshowcase" class="projectsCard__linkItem"><i class="fa-brands fa-github"></i></a>
                         </li>
                         <li class="projectsCard__link">
                             <a target="_blank" href="https://www.linkedin.com/in/ian-schaafsma-2330a9270/" class="projectsCard__linkItem"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -314,7 +317,7 @@
                 </div>         
                 <div class="projectsCard__rightWrapper">
                     <figure class="projectsCard__figure">
-                        <img src="../src/img/project3.webp" alt="" class="projectsCard__img">
+                        <img src="../src/img/project6.webp" alt="" class="projectsCard__img">
                     </figure>
                 </div>       
                 <button class="projectsCard__close">X</button>
@@ -329,7 +332,8 @@
                             <li class="projectCard__skill">SCSS</li>
                             <li class="projectCard__skill">JS</li>
                         </ul>
-                        <p class="projectsCard__description">This is my own spinoff of the site colorhunt. The Javascript is fully OOP, making a project fully OOP was a bit of a struggle when I started the project. Especially arrow functions was something I didn't understand. But now I do. On this page each time you open it you get new randomized colors that you can copy to clipboard if you click on them. <a target="_blank" href="http://33319.hosts1.ma-cloud.nl/ColorPicker/">Try it yourself!</a></p>    
+                        <p class="projectsCard__info">2nd year, solo project, time spent 3 days</p>
+                        <p class="projectsCard__description">This is my own spinoff of the site colorhunt. The Javascript is fully OOP, making a project fully OOP was a bit of a struggle when I started the project. Especially arrow functions was something I didn't understand. But now I do. On this page each time you open it you get new randomized colors that you can copy to clipboard if you click on them. <a target="_blank" href="http://33319.hosts1.ma-cloud.nl/colorpicker/">Try it yourself!</a></p>    
                     </div>
                     <button class="projectsCard__return">Click to Return</button>
                     <ul class="projectsCard__links">
@@ -359,6 +363,7 @@
                             <li class="projectCard__skill">JS</li>
                             <li class="projectCard__skill">JSON</li>
                         </ul>
+                        <p class="projectsCard__info">2nd year, solo project, time spent 2 weeks</p>
                         <p class="projectsCard__description">Banky is an app where you can manage your different accounts. These accounts are loaded in via JSON. And everything is made OOP. This was one of my first OOP projects that was pretty challenging but allot of fun. <a target="_blank" href="http://33319.hosts1.ma-cloud.nl/banky/">Try it yourself!</a></p>    
                     </div>
                     <button class="projectsCard__return">Click to Return</button>
@@ -381,19 +386,20 @@
 
             <div class="projectsCardItem" id="projectsCard--sixth">
                 <div class="projectsCard__leftWrapper">
-                    <h2 class="projectsCard__title">Fontshowcase App</h2>
+                    <h2 class="projectsCard__title">Maneattraction Site</h2>
                     <div class="projectsCard__textWrapper">
                         <ul class="projectCard__skills">
                             <li class="projectCard__skill">HTML</li>
                             <li class="projectCard__skill">SCSS</li>
                             <li class="projectCard__skill">JS</li>
                         </ul>
-                        <p class="projectsCard__description">Fontshowcase is an app that I made inspired by google fonts. In this app you can see what fonts look like by typing in the input field. You can also favorite the fonts you like most. And for the users that want to rest their eyes a bit more there also is a darkmode. <a target="_blank" href="http://33319.hosts1.ma-cloud.nl/fontshowcase/">Try it yourself!</a></p>    
+                        <p class="projectsCard__info">3rd year, solo project, time spent 2 weeks</p>
+                        <p class="projectsCard__description">My first up and running on a server website I made for my dad's music group. While making this I experienced how easy it is to reuse CSS. Works on mobile aswell <a target="_blank" href="http://maneattraction.nl/">Check the site!</a></a></p>    
                     </div>
                     <button class="projectsCard__return">Click to Return</button>
                     <ul class="projectsCard__links">
                         <li class="projectsCard__link">
-                            <a target="_blank" href="https://github.com/IanSchaafsma/Fro-Year-2/tree/main/fontshowcase" class="projectsCard__linkItem"><i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" href="https://github.com/IanSchaafsma/ManeAttraction-Website" class="projectsCard__linkItem"><i class="fa-brands fa-github"></i></a>
                         </li>
                         <li class="projectsCard__link">
                             <a target="_blank" href="https://www.linkedin.com/in/ian-schaafsma-2330a9270/" class="projectsCard__linkItem"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -402,7 +408,7 @@
                 </div>         
                 <div class="projectsCard__rightWrapper">
                     <figure class="projectsCard__figure">
-                        <img src="../src/img/project6.webp" alt="" class="projectsCard__img">
+                        <img src="../src/img/project3.webp" alt="" class="projectsCard__img">
                     </figure>
                 </div>       
                 <button class="projectsCard__close">X</button>
